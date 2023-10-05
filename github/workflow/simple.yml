@@ -1,0 +1,13 @@
+name: shell commands
+on: [push]
+jobs:
+run-shell-commands:
+  run-on: unbuntu-latest
+  steps:
+  -name: String
+  run: echo "welcome to my first"
+  -name: multiline script
+  run: |
+  node -v
+  npm -v
+  
