@@ -10,4 +10,10 @@ run-shell-commands:
   run: |
   node -v
   npm -v
-  
+
+  -name: python command
+  run:
+  import platform
+  print(platform.processor())
+  shell: python
+
