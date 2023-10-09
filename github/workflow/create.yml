@@ -1,0 +1,16 @@
+name: Action.workflow
+on: [push] 
+Jobs:
+run-github-Actions:
+run-on: ubuntu-latest
+steps: 
+-name: simple java scriptAction
+uses: action@v1
+with: 
+who-to-greet: devopshints
+id: hello
+-name: get the output time:
+run: echo "${{steps.hello.output.time}}"
+
+
+
